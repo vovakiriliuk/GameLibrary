@@ -10,8 +10,8 @@
         transition: 0.4s all ease-in-out;
 
         &:hover {
-            background: var(--main-text-color);
-            color: var(--main-button-color);
+            background: var(--hover-button-color);
+            color: var(--hover-text-color);
         }
     }
 </style>
