@@ -2,6 +2,7 @@
 import Button from './components/Button.vue';
 import Header from './components/Header.vue';
 import TestComponent from './components/TestComponent.vue';
+import Footer from './components/Footer.vue';
 
 </script>
 
@@ -9,6 +10,8 @@ import TestComponent from './components/TestComponent.vue';
   <Header/>
   <TestComponent />
   <Button />
+
+  <Footer />
 </template>
 
 <style scoped>
