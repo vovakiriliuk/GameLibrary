@@ -1,15 +1,15 @@
 <template>
     <header>
-        <div class="logo">
-            <img src="" alt="logoImg" class="logo">
+        <a href="#" class="logo">
+            <img src="../assets/vue.svg" alt="logoImg" class="logo">
             <h3>BestGame</h3>
-        </div>
+        </a>
 
         <nav>
             <ul>
-                <li>Games</li>
-                <li>Hits</li>
-                <li>For gamers</li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Hits</a></li>
+                <li><a href="#">For gamers</a></li>
             </ul>
         </nav>
     </header>
@@ -30,6 +30,13 @@
 
     .logo{
         display: flex;
+        padding: 5px;
+        text-decoration: none;
+        color: var(--main-text-color);
+
+        h3 {
+            font-size: 22px;
+        }
     }
 
     nav {
@@ -38,8 +45,20 @@
             display: flex;
 
             li {
-                padding: 5px;
-                color: var(--main-text-color);
+                padding: 10px;
+                font-size: 18px;
+
+                a {
+                    text-decoration: none;
+                    color: var(--main-text-color);
+
+                    transition: var(--transition);
+
+                    &:hover{
+                        color: var(--additional-hover-text);
+                    }
+                }
+                
             }
         }
 
