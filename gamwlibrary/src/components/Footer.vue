@@ -43,10 +43,10 @@
     </footer>
 </template>
 
-<style>
+<style lang="scss">
     footer {
-        color: var(--main-text-color);
-        background: var(--additional-color);
+        color: $main-text-color;
+        background: $additional-color;
         height: 155px;
         position: absolute;
         bottom: 0;
@@ -70,13 +70,7 @@
         list-style-type: none;
 
         a {
-            text-decoration: none;
-            color: var(--main-text-color);
-            transition: var(--transition);
-
-            &:hover {
-                color: var(--additional-hover-text);
-            }
+            @include link();
         }
     }
 
@@ -93,26 +87,20 @@
                 padding: 5px;
             }
             a {
-                text-decoration: none;
-                color: var(--main-text-color);
-                transition: var(--transition);
-
-                &:hover {
-                    color: var(--additional-hover-text);
-                }
+                @include link();
             }
         }
     }
 
     .icon {
-        color: var(--additional-text-color);
+        color: $additional-text-color;
         margin-right: 15px;
         text-decoration: none;
     }
 
     .fbottom {
-        color: var(--border-button-color);
+        color: $border-button-color;
         text-align: center;
-        border-top: 1px solid var(--border-button-color)
+        border-top: 1px solid $border-button-color;
     }
 </style>

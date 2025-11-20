@@ -15,9 +15,9 @@
     </header>
 </template>
 
-<style>
+<style lang="scss">
     header{
-        background: var(--additional-color);
+        background: $additional-color;
         position: sticky;
         top: 0;
         left: 0;
@@ -32,7 +32,7 @@
         display: flex;
         padding: 5px;
         text-decoration: none;
-        color: var(--main-text-color);
+        color: $main-text-color;
 
         h3 {
             font-size: 22px;
@@ -49,14 +49,7 @@
                 font-size: 18px;
 
                 a {
-                    text-decoration: none;
-                    color: var(--main-text-color);
-
-                    transition: var(--transition);
-
-                    &:hover{
-                        color: var(--additional-hover-text);
-                    }
+                  @include link();
                 }
                 
             }
