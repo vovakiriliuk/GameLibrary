@@ -1,0 +1,13 @@
+@mixin link(
+  $color: $main-text-color,
+  $hover: $additional-hover-text,
+  $transition: $transition
+) {
+    text-decoration: none;
+    color: $color;
+    transition: $transition;
+
+    &:hover {
+        color: $hover;
+    }
+}
